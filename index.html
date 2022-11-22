@@ -12,10 +12,12 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
 </head>
 <body>
-    <div id="randemail" >
+    <div id="randemail" v-cloak >
         <ul>
-            <li>
-            {{ arrMail }}
+            <li 
+                v-for=" a in arrMail"
+            >
+            {{ a }}
             </li>
         </ul>
 		
